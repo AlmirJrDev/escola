@@ -1,0 +1,77 @@
+{
+  "info": {
+    "name": "Escola",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "CadastroProfessor",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"nome\": \"Carlos Silva\",\r\n\"email\": \"carlos@unasp.edu.br\",\r\n\"departamento\": \"Computação\"\r\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": { "raw": "localhost:8080/professor", "host": ["localhost"], "port": "8080", "path": ["professor"] }
+      },
+      "response": []
+    },
+    {
+      "name": "CadastroCurso",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"nome\": \"Sistemas de Informação\",\r\n\"professorId\": 1\r\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": { "raw": "localhost:8080/curso", "host": ["localhost"], "port": "8080", "path": ["curso"] }
+      },
+      "response": []
+    },
+    {
+      "name": "CadastroAluno",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"nome\": \"Almir Gomes\",\r\n\"email\": \"almir@aluno.unasp.edu.br\",\r\n\"cursoId\": 1\r\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": { "raw": "localhost:8080/aluno", "host": ["localhost"], "port": "8080", "path": ["aluno"] }
+      },
+      "response": []
+    },
+    {
+      "name": "RelatorioProfessor",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "localhost:8080/professor", "host": ["localhost"], "port": "8080", "path": ["professor"] }
+      },
+      "response": []
+    },
+    {
+      "name": "RelatorioCurso",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "localhost:8080/curso", "host": ["localhost"], "port": "8080", "path": ["curso"] }
+      },
+      "response": []
+    },
+    {
+      "name": "RelatorioAluno",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": { "raw": "localhost:8080/aluno", "host": ["localhost"], "port": "8080", "path": ["aluno"] }
+      },
+      "response": []
+    }
+  ]
+}
